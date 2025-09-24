@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="landingApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Empresas Medianas</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body ng-controller="MainController">
+  <div class="container">
+    <header class="header">
+      <h1>Impulsa tu Empresa</h1>
+    </header>
+
+    <main>
+      <section class="content">
+        <h2>{{mensajePrincipal}}</h2>
+        <p>{{descripcion}}</p>
+        <button ng-click="mostrarBeneficio()" class="btn">Descubre más</button>
+        <p class="extra" ng-show="mostrarTexto">{{beneficio}}</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Proyecto para Empresas Medianas</p>
+    </footer>
+  </div>
+</body>
+</html>
